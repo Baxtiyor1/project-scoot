@@ -6,6 +6,25 @@
     right: 0;
     padding: 22px 0;
     z-index: 9;
+    &__modalwrapper{
+        position: absolute;
+        display: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 60px;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    &__subbox{
+        width: 256px;
+        background-color: #333A44;
+        padding: 64px 0 24px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+    }
     &__iconactive{
         display: none;
     }
@@ -97,23 +116,13 @@
         &__iconnormal{
             display: block;
         }
-        #check:checked ~ .header__menu{
-            margin: 0;
-            width: 256px;
-            padding: 64px 0px 0px 32px;
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            background-color: #333A44;
-            left: 0;
-            bottom: 0;
-            top: 60px;
+        #check:checked ~ .header__modalwrapper{
+            display: block;
         }
-        &__link{
+        &__sublink{
             color: #fff;
         }
-        &__item{
-            background-color: #333A44;
+        &__subitem{
             margin: 0;
             margin-bottom: 24px;
             &:last-child{
