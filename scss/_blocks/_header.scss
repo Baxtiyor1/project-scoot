@@ -1,0 +1,127 @@
+.header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 0;
+    z-index: 9;
+    &__iconactive{
+        display: none;
+    }
+    &__label{
+        display: none;
+    }
+    &__iconnormal{
+        display: none;
+    }
+    &__nav{
+        padding: 0 10px;
+        margin: 0 auto;
+        width: 1110px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__wrapper{
+        width: 415px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu{
+        margin-left: 10px;
+        display: flex;
+    }
+    &__item{
+        margin-right: 32px;
+        display: flex;
+        align-items: center;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        &:hover{
+            color: #FCB72B;
+        }
+    }
+    &__button{
+        margin-left: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+.check{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+@media screen and (max-width:768px) {
+    .header{
+        &__nav{
+            width: 690px;
+        }
+    }
+}
+@media screen and (max-width: 525px) {
+    .header{
+        &__nav{
+            padding-left: 32px;
+        }
+        &__label{
+            display: inline-block;
+        }
+        &__menu{
+            display: none;
+        }
+        &__logo{
+            margin: 0 auto;
+            position: absolute;
+            text-align: center;
+            top: 18px;
+            right: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &__iconnormal{
+            display: block;
+        }
+        #check:checked ~ .header__menu{
+            margin: 0;
+            width: 256px;
+            padding: 64px 0px 0px 32px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: #333A44;
+            left: 0;
+            bottom: 0;
+            top: 60px;
+        }
+        &__link{
+            color: #fff;
+        }
+        &__item{
+            background-color: #333A44;
+            margin: 0;
+            margin-bottom: 24px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__button{
+            display: none;
+        }
+    }
+}

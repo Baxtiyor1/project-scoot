@@ -1,0 +1,121 @@
+.category{
+    margin-top: 160px;
+    &__line{
+        width: 930px;
+        max-width: 100%;
+        border: 7px solid #E5ECF4;
+        
+    }
+    &__menu{
+        margin-top: -60px;
+        margin-left: 165px;
+        display: flex;
+    }
+    &__item{
+        width: 350px;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__title{
+        margin: 40px 0 27px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .category{
+        &__line{
+            width: 840px;
+        }
+    }
+}
+@media screen and (max-width: 1005px) {
+    .category{
+        &__line{
+            width: 747px;
+        }
+    }
+}
+@media screen and (max-width: 865px) {
+    .category{
+        &__line{
+            width: 655px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .category{
+        margin-top: 122px;
+        &__line{
+            transform: rotate(90deg) translateX(127px) translateY(110px);
+            z-index: -1;
+            width: 512px;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+        }
+        &__menu{
+            margin: 0;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__item{
+            margin-right: 0;
+            margin-bottom: 40px;
+            width: 573px;
+            max-width: 100%;
+            display: flex;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &--box{
+                margin-left: 79px;
+            }
+        }
+        &__title{
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .category{
+        &__line{
+            display: none;
+        }
+        &__pic{
+            width: 56px;
+            height: 56px;
+            margin-bottom: 24px;
+        }
+        &__item{
+            flex-direction: column;
+            align-items: center;
+            &--box{
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__title{
+            width: 100%;
+            text-align: center;
+        }
+        &__text{
+            width: 90%;
+            text-align: center;
+        }
+    }
+}

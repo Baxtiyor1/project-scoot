@@ -1,0 +1,14 @@
+.btn{
+    display: inline-block;
+    width: 180px;
+    max-width: 100%;
+    text-align: center;
+    padding: 11px 0;
+    background-color: #FCB72B;
+    border: 3px solid #FCB72B;
+    color: #fff;
+    &:hover{
+        background-color: transparent;
+        color: #FCB72B;
+    }
+}

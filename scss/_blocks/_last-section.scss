@@ -1,0 +1,67 @@
+.last{
+    background-image: url("/img/Mask.svg");
+    background-size: cover;
+    &__list{
+        padding: 102px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__title{
+        width: 415px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__box{
+        width: 359px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 768px) {
+    .last{
+        background-position-y: center;
+        background-position-x: -700px;
+        &__list{
+            padding: 62px 10px;
+            flex-direction: column;
+        }
+        &__title{
+            width: 457px;
+            text-align: center;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width: 525px) {
+    .last{
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .last{
+        background-position-x: 470px;
+        &__list{
+            padding: 88px 0;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.42857px;
+        }
+        &__box{
+            width: 256px;
+            & img{
+                width: 113px;
+                height: 40px;
+            }
+        }
+    }
+}
