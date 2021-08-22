@@ -36,16 +36,17 @@
             height: 15px;
             content: "";
             background-image: url("/img/intro-line-icon.svg");
+            background-repeat: no-repeat;
         }
         &::after{
             position: absolute;
             transform: translateY(-35px) translateX(285px);
             display: inline-block;
             width: 451px;
-            max-width: 100%;
             height: 150px;
             content: "";
             background-image: url("/img/intro-arrov.svg");
+            background-repeat: no-repeat;
         }
     }
 }
@@ -110,7 +111,7 @@
             margin: 24px 0 34px;
             &::after{
                 background-size: cover;
-                transform: translateY(150px) translateX(-460px);
+                transform: translateY(120px) translateX(-540px);
             }
         }
     }

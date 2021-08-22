@@ -1,10 +1,13 @@
 .more{
+    overflow: hidden;
     margin: 200px 0 329px;
+    position: relative;
     &__menu{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
     &__box{
         width: 445px;
         max-width: 100%;
@@ -41,6 +44,40 @@
         color: #939CAA;
     }
 }
+.first-item::after{
+    display: inline-block;
+    content: "";
+    width: 700px;
+    background-image: url("/img/main-arrov.svg");
+    height: 150px;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    transform: translateY(150px) translateX(70px);
+}
+.second-item::after{
+    display: inline-block;
+    flex-direction: column-reverse;
+    content: "";
+    width: 700px;
+    background-image: url("/img/main-arrov.svg");
+    height: 150px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    transform: rotate(0.5turn) translateY(130px) translateX(340px);
+}
+.third-item::after{
+    display: inline-block;
+    content: "";
+    width: 700px;
+    background-image: url("/img/main-arrov.svg");
+    height: 150px;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    transform: translateY(-80px) translateX(340px);
+}
 @media screen and (max-width: 768px) {
     .more{
         margin: 145px 0 105px;
@@ -65,6 +102,15 @@
             width: 100%;
         }
     }
+    .first-item::after{
+        transform: translateY(-390px) translateX(60px);
+    }
+    .second-item::after{
+        transform: rotate(180deg) translateY(630px) translateX(380px);
+    }
+    .third-item::after{
+        transform: translateY(-590px) translateX(355px);
+    }
 }
 @media screen and (max-width: 525px) {
     .more{
@@ -76,6 +122,18 @@
                 object-fit: cover;
             }
         }
+        &__box{
+            padding: 0 20px;
+        }
+    }
+    .first-item::after{
+        transform: translateY(-390px) translateX(350px);
+    }
+    .second-item::after{
+        transform: rotate(180deg) translateY(530px) translateX(500px);
+    }
+    .third-item::after{
+        transform: translateY(-530px) translateX(510px);
     }
 }
 @media screen and (max-width: 375px) {
