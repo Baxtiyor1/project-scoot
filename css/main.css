@@ -263,7 +263,7 @@ a {
   width: 203px;
   height: 15px;
   content: "";
-  background-image: url("/img/intro-line-icon.svg");
+  background-image: url("../img/intro-line-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -275,7 +275,7 @@ a {
   width: 451px;
   height: 150px;
   content: "";
-  background-image: url("/img/intro-arrov.svg");
+  background-image: url("../img/intro-arrov.svg");
   background-repeat: no-repeat;
 }
 
@@ -577,7 +577,7 @@ a {
   display: inline-block;
   content: "";
   width: 700px;
-  background-image: url("/img/main-arrov.svg");
+  background-image: url("../img/main-arrov.svg");
   height: 150px;
   position: absolute;
   right: 0;
@@ -594,7 +594,7 @@ a {
           flex-direction: column-reverse;
   content: "";
   width: 700px;
-  background-image: url("/img/main-arrov.svg");
+  background-image: url("../img/main-arrov.svg");
   height: 150px;
   position: absolute;
   left: 0;
@@ -607,7 +607,7 @@ a {
   display: inline-block;
   content: "";
   width: 700px;
-  background-image: url("/img/main-arrov.svg");
+  background-image: url("../img/main-arrov.svg");
   height: 150px;
   position: absolute;
   right: 0;
@@ -694,7 +694,7 @@ a {
 }
 
 .last {
-  background-image: url("/img/Mask.svg");
+  background-image: url("../img/Mask.svg");
   background-size: cover;
 }
 
